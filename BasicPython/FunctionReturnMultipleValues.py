@@ -81,6 +81,7 @@ def return_dict():
     return d
 
 
+# Driver code to test above method
 dictVal = return_dict()
 print("dictVal ", dictVal)
 print("dictVal x ", dictVal['x'], " dictVal str ", dictVal['str'])
