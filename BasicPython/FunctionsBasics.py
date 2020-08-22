@@ -21,8 +21,6 @@ fun_with_default_values(y=12)  # Passing Single Value
 """
 This is used when we do not know in advance the number of arguments that will be passed to the function
 """
-
-
 def fun_with_arbitrary_value(*args):
     """Function accepts the arbitrary values"""
     for argValue in args:

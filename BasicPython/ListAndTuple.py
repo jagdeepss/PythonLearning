@@ -14,44 +14,41 @@ IMPORTANT NOTE : String and Tuple are immutable vs List is Mutable this is only 
 
 NumberList = [20, 30, 40, 50]
 print(NumberList[1], ", ", NumberList[0])  # 30, 20
-"""
-2. Negative number represent numbers from the last
-"""
+
+# -------------------  Negative number represent numbers from the last ---------------------
+
 print(NumberList[-3], ", ", NumberList[-1])  # 30, 50 as it is counting in reverse
 
-"""
-3. Doing as sum based on Index
-"""
+
+# -------------------  Doing as sum based on Index ---------------------
+
 
 print("Sum of 1 index and 3rd index ", NumberList[1 + 2])
 
-"""
-4. Updating List Values
-"""
+
+# -------------------  Updating List Values  ---------------------
+
 NumberList[3] = 100
 for i in NumberList:
     print(i, ", ")  # Will be change value from 50 100'
 print (len(NumberList))  # 4
 
-"""
-4. Updating List Values
-"""
+# -------------------  Updating List Values  ---------------------
+
 NumberList += [99]
 for i in NumberList:
     print(i, ", ")  # Will add new index 99
 print(len(NumberList))  # will be 5
 
-"""
-5. Adding Two Lists
-"""
+# -------------------  Adding Two Lists  ---------------------
+
 NumberList2 = [121, 30, 140, 150]
 
 NumberList3 = NumberList + NumberList2
 print(NumberList3)
 
-"""
-5. Comparing List
-"""
+
+# -------------------------------------- Comparing List --------------------------------
 NumberListForCompare = [121, 30, 140, 150]
 print(NumberListForCompare == NumberList2)
 
@@ -66,9 +63,8 @@ employeeTuple1 = employeeTuple  # This is pointing to object same in the memory
 print(id(employeeTuple1))  # Print the memory location should be same as next
 print(id(employeeTuple))  # Print the memory location should be same as previous
 
-"""
-1. Adding contents to tuple will create a new tuple as tuples are immutable
-"""
+# -------------------  Adding contents to tuple will create a new tuple as tuples are immutable  ---------------------
+
 
 employeeTuple += (30, 20)
 
@@ -77,17 +73,15 @@ print(employeeTuple1)  # ('Jas', 'Sample', 22)
 
 # --------------------- MANIPULATING LIST AND TUPLE ---------------------
 
-"""
-2. Tuple Can be added to List i.e. List can be added with any iterable object
-"""
+# -------------------  Tuple Can be added to List i.e. List can be added with any iterable object  ---------------------
+
 
 NumberList += employeeTuple
 
 print (NumberList)  # [20, 30, 40, 100, 99, 'Jas', 'Sample', 22, 30, 20]
 
-"""
-3. Tuple Can mutable objects and that can be modified like list in tuple is mutable
-"""
+# -------------------  Tuple Can mutable objects and that can be modified like list in tuple is mutable  ---------------------
+
 
 newEmployeeTuple = ("John", [10, 20, 40])
 
